@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/modulesio/node-native-openvr-deps/issues"
   },
-  "homepage": "https://github.com/modulesio/node-native-openvr-deps#readme"
+  "homepage": "https://github.com/modulesio/node-native-openvr-deps#readme",
+  "dependencies": {
+    "unzip": "^0.1.11"
+  }
 }
