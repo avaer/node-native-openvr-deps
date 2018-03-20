@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "postinstall": "rem || bash -c 'pushd ./bin/osx64 && tar -zxf OpenVR.framework.tgz && popd'"
+    "postinstall": "node postinstall.js"
   },
   "repository": {
     "type": "git",
