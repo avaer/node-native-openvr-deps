@@ -1,10 +1,10 @@
 const path = require('path');
 const fs = require('fs');
 const os = require('os');
-const unzip = require('unzip');
+const unzipper = require('unzipper');
 const rimraf = require('rimraf');
 const ws = fs.createReadStream(path.join(__dirname, 'lib.zip'))
-  .pipe(unzip.Extract({
+  .pipe(unzipper.Extract({
     path: __dirname,
   }));
 
