@@ -8,7 +8,7 @@ const ws = fs.createReadStream(path.join(__dirname, 'lib.zip'))
     path: __dirname,
   }));
 
-ws.on('close', () => {
+ws.on('done', () => {
   rimraf(path.join(__dirname, 'lib.zip'), err => {
     if (err) {
       throw err;
