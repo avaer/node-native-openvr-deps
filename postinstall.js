@@ -1,15 +1,15 @@
 const path = require('path');
 const fs = require('fs');
 const os = require('os');
-const unzpr = require('unzpr');
+const unzipper = require('unzipper');
 const rimraf = require('rimraf');
 const rs = fs.createReadStream(path.join(__dirname, 'lib.zip'));
 
 rs.on('open', () => {
-  const ws = rs.pipe(unzpr.Extract({
+  const ws = rs.pipe(unzipper.Extract({
     path: __dirname,
   }));
-  ws.on('done', () => {
+  ws.on('close', () => {
     rimraf(path.join(__dirname, 'lib.zip'), err => {
       if (err) {
         throw err;

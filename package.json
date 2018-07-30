@@ -19,6 +19,6 @@
   "homepage": "https://github.com/modulesio/node-native-openvr-deps#readme",
   "dependencies": {
     "rimraf": "^2.6.2",
-    "unzpr": "0.0.3"
+    "unzipper": "^0.9.2"
   }
 }
